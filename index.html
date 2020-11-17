@@ -11,11 +11,28 @@
   </head>
   <body>
       <div class="row bg-success" style="margin-bottom: 20px;">
-          <h1 style=" margin-left: 40%; margin-bottom: 30px; margin-top: 30px;">Simple velocity formula</h1>
+          <h1 style=" margin-left: 40%; margin-bottom: 30px; margin-top: 30px;">Simple physics formulas</h1>
       </div>
       <div class="container">
           <div class="row">
-              <div class="col-4"></div>
+              <div class="col-4">
+                <div class="form-group">
+                <label for=""></label>
+                <input type="text" name="meters" id="velocity" class="form-control" placeholder="0" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Initial velocity [m/s]</small>
+              </div>
+              <div class="form-group">
+                <label for=""></label>
+                <input type="text" name="meters" id="velocity2" class="form-control" placeholder="0" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">Final velocity [m/s]</small>
+              </div>
+              <div class="form-group">
+                <label for=""></label>
+                <input type="text" name="meters" id="time2" class="form-control" placeholder="0" aria-describedby="helpId">
+                <small id="helpId" class="text-muted">time [s]</small>
+              </div>
+              <a name="aceleration" id="aceleration" class="btn btn-primary" role="button">calculate aceleration</a>
+            </div>
               <div class="col-4">
               <div class="form-group">
                 <label for=""></label>
@@ -27,9 +44,22 @@
                 <input type="text" name="seconds" id="time" class="form-control" placeholder="0" aria-describedby="helpId">
                 <small id="helpId" class="text-muted">time [s]</small> 
               </div>
-              <a name="velocity" id="count" class="btn btn-primary" role="button">count velocity</a>
+              <a name="velocity" id="count" class="btn btn-primary" role="button">calculate velocity</a>
             </div>
-              <div class="col-4"></div>       
+            
+              <div class="col-4">
+                <div class="form-group">
+              <label for=""></label>
+              <input type="aceleration" name="seconds" id="acel" class="form-control" placeholder="0" aria-describedby="helpId">
+              <small id="helpId" class="text-muted">aceleration [m/s]</small> 
+            </div>
+                <div class="form-group">
+                  <label for=""></label>
+                  <input type="mass" name="seconds" id="mass" class="form-control" placeholder="0" aria-describedby="helpId">
+                  <small id="helpId" class="text-muted">mass [kg]</small> 
+                </div>
+                <a name="force" id="calculate" class="btn btn-primary" role="button">calculate force</a>
+              </div>       
           </div>
           <div class="form-group">
             <label for=""></label>
